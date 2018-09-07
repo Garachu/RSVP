@@ -5,9 +5,9 @@ defmodule Rsvp.Repo.Migrations.AddEventsTable do
     create table(:events) do
       add :title, :string, size: 50
       add :location, :string, size: 100
-      add :date, :utc_datetime
+      # add :date, :naive_datetime
 
-      timestamps
+      timestamps()
     end
   end
 end
